@@ -19,6 +19,11 @@
 		8A14787F1EEB179A00F42B31 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */; };
 		8A1478801EEB179A00F42B31 /* BerTlv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787B1EEB179A00F42B31 /* BerTlv.framework */; };
 		8A1478811EEB179A00F42B31 /* PaynetEasyReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */; };
+		8A25234B1EEB2F750004EEFD /* TDOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1478781EEB179A00F42B31 /* TDOAuth.framework */; };
+		8A25234C1EEB2F750004EEFD /* RemoteLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1478791EEB179A00F42B31 /* RemoteLogger.framework */; };
+		8A25234D1EEB2F750004EEFD /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */; };
+		8A25234E1EEB2F750004EEFD /* BerTlv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787B1EEB179A00F42B31 /* BerTlv.framework */; };
+		8A25234F1EEB2F750004EEFD /* PaynetEasyReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A25234B1EEB2F750004EEFD /* TDOAuth.framework in Frameworks */,
+				8A25234C1EEB2F750004EEFD /* RemoteLogger.framework in Frameworks */,
+				8A25234D1EEB2F750004EEFD /* OMGHTTPURLRQ.framework in Frameworks */,
+				8A25234E1EEB2F750004EEFD /* BerTlv.framework in Frameworks */,
+				8A25234F1EEB2F750004EEFD /* PaynetEasyReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +193,7 @@
 				8A1478561EEB174000F42B31 /* Sources */,
 				8A1478571EEB174000F42B31 /* Frameworks */,
 				8A1478581EEB174000F42B31 /* Resources */,
+				8A8DA5841EEB2E5B00523491 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -287,6 +298,24 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		8A1478831EEB1D4A00F42B31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BerTlv.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OMGHTTPURLRQ.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PaynetEasyReader.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RemoteLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TDOAuth.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8A8DA5841EEB2E5B00523491 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,6 +530,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReaderExampleSwiftCarthageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageTests;
@@ -515,6 +548,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReaderExampleSwiftCarthageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageTests;
