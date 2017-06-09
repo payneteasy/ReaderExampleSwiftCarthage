@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A14784A1EEB174000F42B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1478491EEB174000F42B31 /* AppDelegate.swift */; };
+		8A14784C1EEB174000F42B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14784B1EEB174000F42B31 /* ViewController.swift */; };
+		8A14784F1EEB174000F42B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A14784D1EEB174000F42B31 /* Main.storyboard */; };
+		8A1478511EEB174000F42B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1478501EEB174000F42B31 /* Assets.xcassets */; };
+		8A1478541EEB174000F42B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1478521EEB174000F42B31 /* LaunchScreen.storyboard */; };
+		8A14785F1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14785E1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.swift */; };
+		8A14786A1EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1478691EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.swift */; };
+		8A14787D1EEB179A00F42B31 /* TDOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1478781EEB179A00F42B31 /* TDOAuth.framework */; };
+		8A14787E1EEB179A00F42B31 /* RemoteLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1478791EEB179A00F42B31 /* RemoteLogger.framework */; };
+		8A14787F1EEB179A00F42B31 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */; };
+		8A1478801EEB179A00F42B31 /* BerTlv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787B1EEB179A00F42B31 /* BerTlv.framework */; };
+		8A1478811EEB179A00F42B31 /* PaynetEasyReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A14785B1EEB174000F42B31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A14783E1EEB173F00F42B31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1478451EEB173F00F42B31;
+			remoteInfo = ReaderExampleSwiftCarthage;
+		};
+		8A1478661EEB174000F42B31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A14783E1EEB173F00F42B31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1478451EEB173F00F42B31;
+			remoteInfo = ReaderExampleSwiftCarthage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A1478461EEB174000F42B31 /* ReaderExampleSwiftCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderExampleSwiftCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1478491EEB174000F42B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A14784B1EEB174000F42B31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A14784E1EEB174000F42B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A1478501EEB174000F42B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A1478531EEB174000F42B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A1478551EEB174000F42B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A14785A1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderExampleSwiftCarthageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A14785E1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderExampleSwiftCarthageTests.swift; sourceTree = "<group>"; };
+		8A1478601EEB174000F42B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1478651EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderExampleSwiftCarthageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1478691EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderExampleSwiftCarthageUITests.swift; sourceTree = "<group>"; };
+		8A14786B1EEB174000F42B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1478781EEB179A00F42B31 /* TDOAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TDOAuth.framework; path = Carthage/Build/iOS/TDOAuth.framework; sourceTree = "<group>"; };
+		8A1478791EEB179A00F42B31 /* RemoteLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RemoteLogger.framework; path = Carthage/Build/iOS/RemoteLogger.framework; sourceTree = "<group>"; };
+		8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMGHTTPURLRQ.framework; path = Carthage/Build/iOS/OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		8A14787B1EEB179A00F42B31 /* BerTlv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BerTlv.framework; path = Carthage/Build/iOS/BerTlv.framework; sourceTree = "<group>"; };
+		8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaynetEasyReader.framework; path = Carthage/Build/iOS/PaynetEasyReader.framework; sourceTree = "<group>"; };
+		8A1478821EEB1CD300F42B31 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A1478431EEB173F00F42B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14787D1EEB179A00F42B31 /* TDOAuth.framework in Frameworks */,
+				8A14787E1EEB179A00F42B31 /* RemoteLogger.framework in Frameworks */,
+				8A14787F1EEB179A00F42B31 /* OMGHTTPURLRQ.framework in Frameworks */,
+				8A1478801EEB179A00F42B31 /* BerTlv.framework in Frameworks */,
+				8A1478811EEB179A00F42B31 /* PaynetEasyReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478571EEB174000F42B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478621EEB174000F42B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A14783D1EEB173F00F42B31 = {
+			isa = PBXGroup;
+			children = (
+				8A1478481EEB174000F42B31 /* ReaderExampleSwiftCarthage */,
+				8A14785D1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests */,
+				8A1478681EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests */,
+				8A1478471EEB174000F42B31 /* Products */,
+				8A1478771EEB179A00F42B31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A1478471EEB174000F42B31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A1478461EEB174000F42B31 /* ReaderExampleSwiftCarthage.app */,
+				8A14785A1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.xctest */,
+				8A1478651EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A1478481EEB174000F42B31 /* ReaderExampleSwiftCarthage */ = {
+			isa = PBXGroup;
+			children = (
+				8A1478821EEB1CD300F42B31 /* Bridging-Header.h */,
+				8A1478491EEB174000F42B31 /* AppDelegate.swift */,
+				8A14784B1EEB174000F42B31 /* ViewController.swift */,
+				8A14784D1EEB174000F42B31 /* Main.storyboard */,
+				8A1478501EEB174000F42B31 /* Assets.xcassets */,
+				8A1478521EEB174000F42B31 /* LaunchScreen.storyboard */,
+				8A1478551EEB174000F42B31 /* Info.plist */,
+			);
+			path = ReaderExampleSwiftCarthage;
+			sourceTree = "<group>";
+		};
+		8A14785D1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A14785E1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.swift */,
+				8A1478601EEB174000F42B31 /* Info.plist */,
+			);
+			path = ReaderExampleSwiftCarthageTests;
+			sourceTree = "<group>";
+		};
+		8A1478681EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A1478691EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.swift */,
+				8A14786B1EEB174000F42B31 /* Info.plist */,
+			);
+			path = ReaderExampleSwiftCarthageUITests;
+			sourceTree = "<group>";
+		};
+		8A1478771EEB179A00F42B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A1478781EEB179A00F42B31 /* TDOAuth.framework */,
+				8A1478791EEB179A00F42B31 /* RemoteLogger.framework */,
+				8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */,
+				8A14787B1EEB179A00F42B31 /* BerTlv.framework */,
+				8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A1478451EEB173F00F42B31 /* ReaderExampleSwiftCarthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A14786E1EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthage" */;
+			buildPhases = (
+				8A1478421EEB173F00F42B31 /* Sources */,
+				8A1478431EEB173F00F42B31 /* Frameworks */,
+				8A1478441EEB173F00F42B31 /* Resources */,
+				8A1478831EEB1D4A00F42B31 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReaderExampleSwiftCarthage;
+			productName = ReaderExampleSwiftCarthage;
+			productReference = 8A1478461EEB174000F42B31 /* ReaderExampleSwiftCarthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A1478591EEB174000F42B31 /* ReaderExampleSwiftCarthageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1478711EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthageTests" */;
+			buildPhases = (
+				8A1478561EEB174000F42B31 /* Sources */,
+				8A1478571EEB174000F42B31 /* Frameworks */,
+				8A1478581EEB174000F42B31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A14785C1EEB174000F42B31 /* PBXTargetDependency */,
+			);
+			name = ReaderExampleSwiftCarthageTests;
+			productName = ReaderExampleSwiftCarthageTests;
+			productReference = 8A14785A1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A1478641EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1478741EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthageUITests" */;
+			buildPhases = (
+				8A1478611EEB174000F42B31 /* Sources */,
+				8A1478621EEB174000F42B31 /* Frameworks */,
+				8A1478631EEB174000F42B31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A1478671EEB174000F42B31 /* PBXTargetDependency */,
+			);
+			name = ReaderExampleSwiftCarthageUITests;
+			productName = ReaderExampleSwiftCarthageUITests;
+			productReference = 8A1478651EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A14783E1EEB173F00F42B31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = payneteasy;
+				TargetAttributes = {
+					8A1478451EEB173F00F42B31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8A1478591EEB174000F42B31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A1478451EEB173F00F42B31;
+					};
+					8A1478641EEB174000F42B31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A1478451EEB173F00F42B31;
+					};
+				};
+			};
+			buildConfigurationList = 8A1478411EEB173F00F42B31 /* Build configuration list for PBXProject "ReaderExampleSwiftCarthage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A14783D1EEB173F00F42B31;
+			productRefGroup = 8A1478471EEB174000F42B31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A1478451EEB173F00F42B31 /* ReaderExampleSwiftCarthage */,
+				8A1478591EEB174000F42B31 /* ReaderExampleSwiftCarthageTests */,
+				8A1478641EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A1478441EEB173F00F42B31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1478541EEB174000F42B31 /* LaunchScreen.storyboard in Resources */,
+				8A1478511EEB174000F42B31 /* Assets.xcassets in Resources */,
+				8A14784F1EEB174000F42B31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478581EEB174000F42B31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478631EEB174000F42B31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A1478831EEB1D4A00F42B31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BerTlv.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OMGHTTPURLRQ.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PaynetEasyReader.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RemoteLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TDOAuth.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A1478421EEB173F00F42B31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14784C1EEB174000F42B31 /* ViewController.swift in Sources */,
+				8A14784A1EEB174000F42B31 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478561EEB174000F42B31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14785F1EEB174000F42B31 /* ReaderExampleSwiftCarthageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1478611EEB174000F42B31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14786A1EEB174000F42B31 /* ReaderExampleSwiftCarthageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A14785C1EEB174000F42B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1478451EEB173F00F42B31 /* ReaderExampleSwiftCarthage */;
+			targetProxy = 8A14785B1EEB174000F42B31 /* PBXContainerItemProxy */;
+		};
+		8A1478671EEB174000F42B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1478451EEB173F00F42B31 /* ReaderExampleSwiftCarthage */;
+			targetProxy = 8A1478661EEB174000F42B31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A14784D1EEB174000F42B31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A14784E1EEB174000F42B31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A1478521EEB174000F42B31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1478531EEB174000F42B31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A14786C1EEB174000F42B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A14786D1EEB174000F42B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A14786F1EEB174000F42B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ReaderExampleSwiftCarthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReaderExampleSwiftCarthage/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A1478701EEB174000F42B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ReaderExampleSwiftCarthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReaderExampleSwiftCarthage/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8A1478721EEB174000F42B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReaderExampleSwiftCarthageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReaderExampleSwiftCarthage.app/ReaderExampleSwiftCarthage";
+			};
+			name = Debug;
+		};
+		8A1478731EEB174000F42B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ReaderExampleSwiftCarthageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReaderExampleSwiftCarthage.app/ReaderExampleSwiftCarthage";
+			};
+			name = Release;
+		};
+		8A1478751EEB174000F42B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ReaderExampleSwiftCarthageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReaderExampleSwiftCarthage;
+			};
+			name = Debug;
+		};
+		8A1478761EEB174000F42B31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ReaderExampleSwiftCarthageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ReaderExampleSwiftCarthage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A1478411EEB173F00F42B31 /* Build configuration list for PBXProject "ReaderExampleSwiftCarthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A14786C1EEB174000F42B31 /* Debug */,
+				8A14786D1EEB174000F42B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A14786E1EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A14786F1EEB174000F42B31 /* Debug */,
+				8A1478701EEB174000F42B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1478711EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1478721EEB174000F42B31 /* Debug */,
+				8A1478731EEB174000F42B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1478741EEB174000F42B31 /* Build configuration list for PBXNativeTarget "ReaderExampleSwiftCarthageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1478751EEB174000F42B31 /* Debug */,
+				8A1478761EEB174000F42B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A14783E1EEB173F00F42B31 /* Project object */;
+}
