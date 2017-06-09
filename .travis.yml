@@ -2,12 +2,12 @@ osx_image: xcode8
 language: objective-c
 
 before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
-- carthage update --platform iOS
+- #brew update
+- #brew outdated carthage || brew upgrade carthage
 
 script:
   - open -b com.apple.iphonesimulator
+  - carthage update --platform iOS
   - set -o pipefail && env NSUnbufferedIO=YES
     xcodebuild test
     -project ReaderExampleSwiftCarthage.xcodeproj
