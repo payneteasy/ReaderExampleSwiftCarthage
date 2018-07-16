@@ -21,5 +21,8 @@
 #import <PaynetEasyReader/PNECard.h>
 #import <PaynetEasyReader/PNEReaderEvent.h>
 #import <PaynetEasyReader/PNEConfigurationContinuationBuilder.h>
+#import <PayneteasyReaderI18n/ReaderEventTextProducer.h>
+#import <PayneteasyReaderI18n/ProcessingEventTextProducer.h>
+#import <PayneteasyReaderI18n/ErrorEventTextProducer.h>
 
 #endif /* Bridging_Header_h */

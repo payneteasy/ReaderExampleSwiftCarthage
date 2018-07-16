@@ -1,1 +1,2 @@
-github "payneteasy/PaynetEasyReader" "0.2.15"
+github "payneteasy/PaynetEasyReader" "0.2.27-3"
+github "payneteasy/PayneteasyReaderI18n" "1.0.1"

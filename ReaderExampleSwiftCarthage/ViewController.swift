@@ -13,6 +13,10 @@ class ViewController: UIViewController, PNEReaderPresenter {
 
     var manager: PNEReaderManager!
     
+    var _readerEventTextProducer: ReaderEventTextProducer!
+    var _processingEventTextProducer: ProcessingEventTextProducer!
+    var _errorEventTextProducer: ErrorEventTextProducer!
+    
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
@@ -27,6 +31,10 @@ class ViewController: UIViewController, PNEReaderPresenter {
         let factory = PNEReaderFactory()
         let reader  = PNEReaderInfo(type: PNEReaderType.MIURA_OR_SPIRE)
         let amount  = NSDecimalNumber(string: "1.00")
+        
+        _readerEventTextProducer = ReaderEventTextProducer.init();
+        _processingEventTextProducer = ProcessingEventTextProducer.init();
+        _errorEventTextProducer = ErrorEventTextProducer.init();
         
         manager     = factory.createManager(reader, amount: amount, currency: "RUB", presenter: self)
         manager.start()
@@ -46,7 +54,7 @@ class ViewController: UIViewController, PNEReaderPresenter {
     
     func stateChanged(_ aEvent: PNEReaderEvent!) {
         NSLog("stateChanged: \(aEvent)")
-        label.text = aEvent.description;
+        label.text = String.init(format: "%@\n%@", _readerEventTextProducer.text(for: aEvent), aEvent.description);
     }
     
     func onCard(_ aCard: PNECard!) -> PNEProcessingContinuation! {
@@ -61,12 +69,12 @@ class ViewController: UIViewController, PNEReaderPresenter {
     
     func onCardError(_ aError: PNECardError!) {
         NSLog("onCardError: \(aError)")
-        label.text = aError.description;
+        label.text = String.init(format: "%@\n%@", _errorEventTextProducer.text(forError: aError), aError.description);
     }
     
     func onProcessingEvent(_ aEvent: PNEProcessingEvent!) {
         NSLog("onProcessingEvent: \(aEvent)")
-        label.text = aEvent.description;
+        label.text = String.init(format: "%@\n%@", _processingEventTextProducer.text(for: aEvent), aEvent.description);
     }
     
     func onConfiguration() -> PNEConfigurationContinuation! {

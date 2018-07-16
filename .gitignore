@@ -9,6 +9,7 @@ target
 *.xccheckout
 automation_results
 Pods/
+Carthage/
 *.xcworkspace/
 iOSInjectionProject/
 build/
