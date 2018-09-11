@@ -24,6 +24,8 @@
 		8A25234D1EEB2F750004EEFD /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */; };
 		8A25234E1EEB2F750004EEFD /* BerTlv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787B1EEB179A00F42B31 /* BerTlv.framework */; };
 		8A25234F1EEB2F750004EEFD /* PaynetEasyReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */; };
+		A55877A820FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */; };
+		A55877AA20FCE4370036F2D2 /* PayneteasyReaderI18n.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,20 @@
 			remoteInfo = ReaderExampleSwiftCarthage;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A55877AB20FCE4380036F2D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A55877AA20FCE4370036F2D2 /* PayneteasyReaderI18n.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A1478461EEB174000F42B31 /* ReaderExampleSwiftCarthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderExampleSwiftCarthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +79,7 @@
 		8A14787B1EEB179A00F42B31 /* BerTlv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BerTlv.framework; path = Carthage/Build/iOS/BerTlv.framework; sourceTree = "<group>"; };
 		8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaynetEasyReader.framework; path = Carthage/Build/iOS/PaynetEasyReader.framework; sourceTree = "<group>"; };
 		8A1478821EEB1CD300F42B31 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayneteasyReaderI18n.framework; path = Carthage/Build/iOS/PayneteasyReaderI18n.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +92,7 @@
 				8A14787F1EEB179A00F42B31 /* OMGHTTPURLRQ.framework in Frameworks */,
 				8A1478801EEB179A00F42B31 /* BerTlv.framework in Frameworks */,
 				8A1478811EEB179A00F42B31 /* PaynetEasyReader.framework in Frameworks */,
+				A55877A820FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +174,7 @@
 		8A1478771EEB179A00F42B31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */,
 				8A1478781EEB179A00F42B31 /* TDOAuth.framework */,
 				8A1478791EEB179A00F42B31 /* RemoteLogger.framework */,
 				8A14787A1EEB179A00F42B31 /* OMGHTTPURLRQ.framework */,
@@ -176,6 +195,7 @@
 				8A1478431EEB173F00F42B31 /* Frameworks */,
 				8A1478441EEB173F00F42B31 /* Resources */,
 				8A1478831EEB1D4A00F42B31 /* ShellScript */,
+				A55877AB20FCE4380036F2D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
