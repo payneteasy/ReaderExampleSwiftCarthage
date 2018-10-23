@@ -7,7 +7,8 @@
 //
 
 import XCTest
-@testable import ReaderExampleSwiftCarthage
+import PaynetEasyReader
+import PayneteasyReaderI18n
 
 class ReaderExampleSwiftCarthageTests: XCTestCase {
     
@@ -33,4 +34,12 @@ class ReaderExampleSwiftCarthageTests: XCTestCase {
         }
     }
     
+    func testTranslation() {
+        let readerEventTextProducer = ReaderEventTextProducer.init()
+        let event = PNEReaderEvent.init(state: PNEReaderState.CONNECTED)
+        let event_text = readerEventTextProducer.text(for: event);
+        XCTAssertNotNil(event_text)
+        XCTAssertNotEqual(event_text, "PNEReaderState_CONNECTED");
+        NSLog(event_text!);
+    }
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import PaynetEasyReader;
+import PayneteasyReaderI18n;
 
 class ViewController: UIViewController, PNEReaderPresenter {
 

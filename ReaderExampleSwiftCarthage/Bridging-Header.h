@@ -9,7 +9,6 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 
-
 #import <PaynetEasyReader/PNEReaderFactory.h>
 #import <PaynetEasyReader/PNEReaderInfo.h>
 #import <PaynetEasyReader/PNEReaderManager.h>
@@ -21,8 +20,5 @@
 #import <PaynetEasyReader/PNECard.h>
 #import <PaynetEasyReader/PNEReaderEvent.h>
 #import <PaynetEasyReader/PNEConfigurationContinuationBuilder.h>
-#import <PayneteasyReaderI18n/ReaderEventTextProducer.h>
-#import <PayneteasyReaderI18n/ProcessingEventTextProducer.h>
-#import <PayneteasyReaderI18n/ErrorEventTextProducer.h>
 
 #endif /* Bridging_Header_h */

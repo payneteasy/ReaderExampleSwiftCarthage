@@ -26,6 +26,8 @@
 		8A25234F1EEB2F750004EEFD /* PaynetEasyReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */; };
 		A55877A820FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */; };
 		A55877AA20FCE4370036F2D2 /* PayneteasyReaderI18n.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5B2BFE5217F5C1F00B7B135 /* PayneteasyReaderI18n.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */; };
+		A5B2BFEA217F683000B7B135 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5B2BFEC217F683000B7B135 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		8A14787C1EEB179A00F42B31 /* PaynetEasyReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaynetEasyReader.framework; path = Carthage/Build/iOS/PaynetEasyReader.framework; sourceTree = "<group>"; };
 		8A1478821EEB1CD300F42B31 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		A55877A720FCE3AF0036F2D2 /* PayneteasyReaderI18n.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayneteasyReaderI18n.framework; path = Carthage/Build/iOS/PayneteasyReaderI18n.framework; sourceTree = "<group>"; };
+		A5B2BFEB217F683000B7B135 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5B2BFED217F683400B7B135 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				8A25234C1EEB2F750004EEFD /* RemoteLogger.framework in Frameworks */,
 				8A25234D1EEB2F750004EEFD /* OMGHTTPURLRQ.framework in Frameworks */,
 				8A25234E1EEB2F750004EEFD /* BerTlv.framework in Frameworks */,
+				A5B2BFE5217F5C1F00B7B135 /* PayneteasyReaderI18n.framework in Frameworks */,
 				8A25234F1EEB2F750004EEFD /* PaynetEasyReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +153,7 @@
 				8A14784D1EEB174000F42B31 /* Main.storyboard */,
 				8A1478501EEB174000F42B31 /* Assets.xcassets */,
 				8A1478521EEB174000F42B31 /* LaunchScreen.storyboard */,
+				A5B2BFEC217F683000B7B135 /* Localizable.strings */,
 				8A1478551EEB174000F42B31 /* Info.plist */,
 			);
 			path = ReaderExampleSwiftCarthage;
@@ -295,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1478541EEB174000F42B31 /* LaunchScreen.storyboard in Resources */,
+				A5B2BFEA217F683000B7B135 /* Localizable.strings in Resources */,
 				8A1478511EEB174000F42B31 /* Assets.xcassets in Resources */,
 				8A14784F1EEB174000F42B31 /* Main.storyboard in Resources */,
 			);
@@ -413,6 +420,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		A5B2BFEC217F683000B7B135 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B2BFEB217F683000B7B135 /* ru */,
+				A5B2BFED217F683400B7B135 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -420,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -470,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -585,6 +603,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReaderExampleSwiftCarthageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageUITests;
@@ -598,6 +620,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReaderExampleSwiftCarthageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExampleSwiftCarthageUITests;
