@@ -18,7 +18,7 @@ open ReaderExampleSwiftCarthage.xcodeproj
 
 * Create `Cartfile` and add the following line to itЖ
 ```
-github "payneteasy/PaynetEasyReader" "0.2.12"
+github "payneteasy/PaynetEasyReader" "0.2.31-3"
 ```
 * Run `carthage update --platform iOS`
 * Run `open your-project.xcodeproj`
